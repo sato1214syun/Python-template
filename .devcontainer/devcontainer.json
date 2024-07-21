@@ -21,13 +21,5 @@
 			"label": "desktop"
 		}
 	},
-	"onCreateCommand": "curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION=\"--yes\" bash"
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Configure tool-specific properties.
-	// "customizations": {},
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"onCreateCommand": "/bin/sh .devcontainer/onCreateCommand.sh"
 }
